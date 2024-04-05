@@ -26,8 +26,8 @@ export default function AddTopic() {
    
     return (
         <form class="max-w-sm ">
-            <Input value={title} setState={setTitle} />
-            <Input value={dis} setState={setDis} />
+            <Input value={title} setState={setTitle} placeholder={'Title'}/>
+            <Input value={dis} setState={setDis} placeholder={'Description'}/>
             <Buttons title={'Add Topic'} handler={topicAdd} loading={loading}/>
          </form>
 
