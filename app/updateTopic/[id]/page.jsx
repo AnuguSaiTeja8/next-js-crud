@@ -1,13 +1,14 @@
-"use client"
+'use client'
+
 import Input from "@/components/Input";
 import { getSingleTopics, updateTopic } from "@/components/api/url";
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import   { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import Buttons from "@/components/Buttons";
 import Loading from "@/components/Loading";
 
-export default function page() {
+export default function Page() {
     let { id } = useParams()
     const router = useRouter();
  
